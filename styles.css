@@ -1,0 +1,753 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+#header{
+    background-color: rgb(44,62,80);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: all .3s ease .3s;
+}
+#header  .navbar{
+    width: 85%;
+}
+
+#header.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    z-index: 999;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.75em;
+    transition: font-size 0.3s;
+
+}
+.navbar-nav .nav-item{
+    margin-left: 30px;
+}
+.navbar-nav .nav-item .nav-link{
+    font-size:20px;
+    color: white;
+}
+nav .navbar-toggler{
+
+    background-color: rgb(26,188,156);
+}
+header nav ul li a.active{
+    background-color:#70b9b0;
+    color: #70b9b0;
+    border-radius: 5px;
+    padding: 10px 5px;
+}
+
+
+
+
+.hero{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(26,188,156);
+}
+.hero .img{
+    height: 250px;
+    width: 350px;
+}
+.hero .fw-bold{
+    color: white;font-size: 50px;
+}
+.hero .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .icon .bi-star-fill{
+    color:  rgb(255, 255, 255);
+    font-size: 40px;
+position: relative;
+}
+
+.hero .icon::before{
+    content: '';
+    position: absolute;
+  right: 280px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    
+    background-color:  rgb(255, 255, 255);
+}
+.hero .icon::after{
+    content: '';
+    position: absolute;
+left: 280px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    background-color:  rgb(255, 255, 255);
+}
+.hero div span{
+    color: white;
+    font-size: 20px;
+}
+
+
+#gallery{
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+text-align: center;
+}
+.gallery-heading h2{
+    font-size: 40px;
+    color:  rgb(44,62,80);
+}
+
+
+
+.gallery .icon{
+    position: relative;
+}
+.gallery .icon .bi-star-fill{
+    color:  rgb(44,62,80);
+    font-size: 40px;
+position: relative;
+}
+
+.gallery .icon::before{
+    content: '';
+    position: absolute;
+    right: 49px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    
+    background-color:  rgb(44,62,80);
+}
+.gallery .icon::after{
+    content: '';
+    position: absolute;
+    right: -160px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    background-color:  rgb(44,62,80);
+}
+
+
+.gallery .col img{
+    height: 100%;
+    width: 100%;
+object-fit: fill;
+}
+
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0px;   background-color: rgb(26,188,156);
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+    width: 90%;
+    flex-direction: column;
+}
+
+.about-heading h2{
+    color: white;
+    font-size: 40px;
+}
+
+.about .icon{
+    position: relative;
+}
+.about .icon .bi-star-fill{
+    color:  rgb(255, 255, 255);
+    font-size: 40px;
+position: relative;
+}
+
+.about .icon::before{
+    content: '';
+    position: absolute;
+    right: 49px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    
+    background-color:  rgb(255, 255, 255);
+}
+.about .icon::after{
+    content: '';
+    position: absolute;
+    right: -160px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    background-color:  rgb(255, 255, 255);
+}
+.about .row .col p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+}
+.about .button button{
+    width: 220px;
+    height: 60px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.about .button button i{
+    margin-right: 10px;
+    
+}
+.about .button button:hover{
+    background-color: white;
+    color: rgb(26,188,156) ;
+}
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;   
+}
+.contact{
+    width:80% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-heading h2{
+font-size: 40px;
+}
+.contact .icon {
+    position: relative;
+}
+.contact .icon .bi-star-fill{
+    color:  rgb(44,62,80);
+    font-size: 40px;
+position: relative;
+}
+
+.contact .icon::before{
+    content: '';
+    position: absolute;
+    right: 49px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    
+    background-color:  rgb(44,62,80);
+}
+.contact .icon::after{
+    content: '';
+    position: absolute;
+    right: -160px;
+    top: 29px;
+    height: 6px;
+    width: 150px;
+    border-radius: 100px;
+    background-color:  rgb(44,62,80);
+}
+
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 60%;
+}
+.contact .col {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contact form input,
+.contact form textarea{
+ 
+    border: none ;
+    border-bottom: 1px solid  rgb(44,62,80);
+
+}
+.contact form button[type="submit"]{
+    width: 20%;
+padding: 10px;    
+}
+.form-control {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    caret-color: #70b9b0;
+  }
+  .contact form input,
+  .contact form textarea::placeholder{
+font-size: 22px;
+  } 
+.contact .col .card input::placeholder{
+    color: #888;
+   
+
+}
+.contact form .btn{
+    width: 10%;
+    background-color: #70b9b0;
+    color:white;
+}
+.footer{
+    background-color: rgb(26, 188, 156);
+}
+textarea{
+    text-align: start;
+}
+
+
+footer{
+    background-color:rgb(44,62,80) ;
+    
+}
+.foot2{
+    background-color:rgb(25, 35, 45)  ;
+    color: white;
+    
+}
+
+
+
+@media screen and (max-width:600px) {
+    #header{
+        background-color: rgb(44,62,80);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        transition: all .3s ease .3s;
+    }
+    #header  .navbar{
+        width:95%;
+    }
+    
+    #header.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0px;
+        z-index: 999;
+    }
+    
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9em;
+        transition: font-size 0.3s;
+    
+    }
+    .navbar-nav .nav-item{
+        margin-left: 30px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size:20px;
+        color: white;
+    }
+    
+    
+    
+    
+ 
+.hero{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(26,188,156);
+}
+.hero .img{
+    height: 250px;
+    width: 350px;
+}
+.hero .fw-bold{
+    color: white;font-size: 40px;
+}
+.hero .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .icon .bi-star-fill{
+    color:  rgb(255, 255, 255);
+    font-size: 40px;
+position: relative;
+}
+
+.hero .icon::before{
+    content: '';
+    position: absolute;
+   right:230px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    
+    background:white;
+}
+.hero .icon::after{
+    content: '';
+    position: absolute;
+left:230px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    background:  white;
+}
+.hero div span{
+    color: white;
+    font-size: 20px;
+}
+ 
+
+
+#gallery{
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+text-align: center;
+}
+.gallery-heading h2{
+    font-size: 40px;
+    color:  rgb(44,62,80);
+}
+
+
+
+.gallery .icon{
+    position: relative;
+}
+.gallery .icon .bi-star-fill{
+    color:  rgb(44,62,80);
+    font-size: 40px;
+position: relative;
+}
+
+.gallery .icon::before{
+    content: '';
+    position: absolute;
+    right: 49px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    
+    background-color:  rgb(44,62,80);
+}
+.gallery .icon::after{
+    content: '';
+    position: absolute;
+    right: -114px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    background-color:  rgb(44,62,80);
+}
+
+
+
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0px;   background-color: rgb(26,188,156);
+
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center
+    ;
+    width: 80%;
+    flex-direction: column;
+}
+
+.about-heading h2{
+    color: white;
+    font-size: 40px;
+}
+
+.about .icon{
+    position: relative;
+}
+.about .icon .bi-star-fill{
+    color:  rgb(255, 255, 255);
+    font-size: 40px;
+position: relative;
+}
+
+.about .icon::before{
+    content: '';
+    position: absolute;
+    right: 49px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    
+    background-color:  rgb(255, 255, 255);
+}
+.about .icon::after{
+    content: '';
+    position: absolute;
+    right: -115px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    background-color:  rgb(255, 255, 255);
+}
+.about .row .col p{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: start;
+}
+.about .button button{
+    width: 220px;
+    height: 60px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.about .button button i{
+    margin-right: 10px;
+    
+}
+.about .button button:hover{
+    background-color: white;
+    color: rgb(26,188,156) ;
+}
+
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;   
+}
+.contact{
+    width:80% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-heading h2{
+font-size: 40px;
+}
+.contact .icon {
+    position: relative;
+}
+.contact .icon .bi-star-fill{
+    color:  rgb(44,62,80);
+    font-size: 40px;
+position: relative;
+}
+
+.contact .icon::before{
+    content: '';
+    position: absolute;
+    right: 49px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    
+    background-color:  rgb(44,62,80);
+}
+.contact .icon::after{
+    content: '';
+    position: absolute;
+    right: -112px;
+    top: 29px;
+    height: 6px;
+    width: 100px;
+    border-radius: 100px;
+    background-color:  rgb(44,62,80);
+}
+
+.contact .row {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+.contact .col {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.contact form input,
+.contact form textarea{
+ 
+    border: none ;
+    border-bottom: 1px solid  rgb(44,62,80);
+
+}
+.contact form button[type="submit"]{
+    width: 40%;
+padding: 10px;    
+}
+.form-control {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    caret-color: #70b9b0;
+  }
+  .contact form input,
+  .contact form textarea::placeholder{
+font-size: 22px;
+  } 
+.contact .col .card input::placeholder{
+    color: #888;
+   
+
+}
+.contact form .btn{
+    width: 10%;
+    background-color: #70b9b0;
+    color:white;
+}
+.footer{
+    background-color: rgb(26, 188, 156);
+}
+textarea{
+    text-align: start;
+}
+
+}
+
+@media screen and (max-width:720px) {
+    .logo{
+        font-size: 1.4em;
+    } 
+}
+footer h2{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+}
+footer li{
+    color: white;
+
+}
+footer ul{
+    margin-top: 40px;
+}
+
+
+
+
+
+.lm li{
+    margin-right: 30px;
+    border: 1px solid white;
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lm li i{
+    color:white;
+    font-size: 20px;
+}
+.lm li:hover{
+    background-color: white;
+}
+
+.lm li:hover i{
+color:rgb(44,62,80);
+}
+footer .leo{
+    font-size: 18px;
+}
+footer .leo .link{
+    color:#70b9b0;
+}
