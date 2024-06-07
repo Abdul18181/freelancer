@@ -54,14 +54,18 @@ header nav ul li a.active{
     background-color:#70b9b0;
     color: #70b9b0;
     border-radius: 5px;
-    padding: 10px 5px;
+    padding: 10px 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
 .hero{
-    height: 600px;
+    height: 700px;
     width: 100%;
     background-color: rgb(26,188,156);
 }
@@ -413,13 +417,14 @@ footer{
     
  
 .hero{
-    height: 600px;
+    height: 700px;
     width: 100%;
     background-color: rgb(26,188,156);
+    padding: 100px 0px;
 }
 .hero .img{
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
 }
 .hero .fw-bold{
     color: white;font-size: 40px;
@@ -750,4 +755,8 @@ footer .leo{
 }
 footer .leo .link{
     color:#70b9b0;
+}
+.foot2{
+    position: relative;
+    bottom: 0;
 }
