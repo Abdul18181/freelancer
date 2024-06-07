@@ -43,7 +43,7 @@
     margin-left: 30px;
 }
 .navbar-nav .nav-item .nav-link{
-    font-size:20px;
+    font-size:18px;
     color: white;
 }
 nav .navbar-toggler{
@@ -54,7 +54,7 @@ header nav ul li a.active{
     background-color:#70b9b0;
     color: #70b9b0;
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: 10px 50px;
     width: 100px;
     display: flex;
     justify-content: center;
